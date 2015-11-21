@@ -10,7 +10,7 @@ class Installer extends LibraryInstaller
     /**
      * {@inheritDoc}
      */
-    public function getPackageBasePath(PackageInterface $package)
+    public function getInstallPath(PackageInterface $package)
     {
         list($vendor, $name) = explode('/', $package->getPrettyName());
 
