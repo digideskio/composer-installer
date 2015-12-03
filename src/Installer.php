@@ -16,7 +16,7 @@ class Installer extends LibraryInstaller
 
         $name = preg_replace('/^flarum-/', '', $name);
 
-        return 'extensions/'.$vendor.'-'.$name;
+        return getcwd() . '/extensions/'.$vendor.'-'.$name;
     }
 
     /**
