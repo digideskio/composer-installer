@@ -28,7 +28,7 @@ class InstallerTest extends \PHPUnit_Framework_TestCase
         $package = new Package($package, '1.0.0', '1.0.0');
         $package->setType($type);
 
-        $this->assertEquals($basePath, $this->installer->getInstallPath($package));
+        $this->assertEquals(getcwd().'/'.$basePath, $this->installer->getInstallPath($package));
     }
 
     public function packageBasePathFormatProvider()
