@@ -33,10 +33,10 @@ class InstallerTest extends \PHPUnit_Framework_TestCase
 
     public function packageBasePathFormatProvider()
     {
-        return [
-            ['flarum-extension', 'test/foo', 'extensions/test-foo'],
-            ['flarum-extension', 'test/flarum-foo-bar', 'extensions/test-foo-bar'],
-        ];
+        return array(
+            array('flarum-extension', 'test/foo', 'extensions/test-foo'),
+            array('flarum-extension', 'test/flarum-foo-bar', 'extensions/test-foo-bar'),
+        );
     }
 
     public function testSupportsFlarumExtensionType()
