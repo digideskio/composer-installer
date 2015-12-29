@@ -36,6 +36,7 @@ class InstallerTest extends \PHPUnit_Framework_TestCase
         return array(
             array('flarum-extension', 'test/foo', 'extensions/test-foo'),
             array('flarum-extension', 'test/flarum-foo-bar', 'extensions/test-foo-bar'),
+            array('flarum-extension', 'test/flarum-ext-foo-bar', 'extensions/test-foo-bar'),
         );
     }
 

@@ -14,7 +14,7 @@ class Installer extends LibraryInstaller
     {
         list($vendor, $name) = explode('/', $package->getPrettyName());
 
-        $name = preg_replace('/^flarum-/', '', $name);
+        $name = preg_replace('/^flarum-(ext-)?/', '', $name);
 
         return getcwd() . '/extensions/'.$vendor.'-'.$name;
     }
